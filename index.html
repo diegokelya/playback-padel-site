@@ -3,18 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PlayBack Padel guarda tus mejores jugadas y actualiza el marcador con gestos.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>PlayBack Padel — Tu mejor punto, siempre listo</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2306111c'/%3E%3Cpath d='M17 18h30v28H17z' fill='none' stroke='%23c8f74d' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23c8f74d'/%3E%3C/svg%3E">
+  <meta name="description" content="PlayBack Padel convierte tu iPhone en una cámara de repeticiones para pádel: guardá la jugada con un gesto, revisala en VAR en cámara lenta y llevá el marcador en vivo.">
+  <meta name="theme-color" content="#06111c">
+  <link rel="canonical" href="https://diegokelya.github.io/playback-padel-site/">
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/logo-128.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PlayBack Padel">
+  <meta property="og:title" content="PlayBack Padel — Tu mejor punto, siempre listo">
+  <meta property="og:description" content="Repeticiones, VAR en cámara lenta y marcador en vivo para tu partido de pádel. Todo en tu iPhone.">
+  <meta property="og:url" content="https://diegokelya.github.io/playback-padel-site/">
+  <meta property="og:image" content="https://diegokelya.github.io/playback-padel-site/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav"><a class="brand" href="#inicio"><img src="assets/playback-padel-logo.png" alt="PlayBack Padel"><span>PLAYBACK<br>PADEL</span></a><nav><a href="#gestos" data-i18n="navGestures">Gestos</a><a href="#funciones" data-i18n="navFeatures">Funciones</a><a href="#proximamente" data-i18n="navDownload">Descarga</a><button id="language" aria-label="Change language">EN</button></nav></header>
-  <main>
-    <section id="inicio" class="hero"><div class="hero-copy"><p class="eyebrow" data-i18n="eyebrow">REPETICIONES Y MARCADOR EN VIVO</p><h1 data-i18n="heroTitle">Tu mejor punto.<br><em>Un gesto</em> para guardarlo.</h1><p class="lede" data-i18n="heroText">PlayBack Padel transforma un iPhone en una cámara de repeticiones y marcador para tu partido.</p><a class="primary" href="#proximamente" data-i18n="heroCta">Recibir novedades</a></div><div class="court-card" aria-label="Marcador de ejemplo"><div class="broadcast"><span>● LIVE</span><span>PLAYBACK PADEL</span></div><div class="score-grid"><div><small data-i18n="teamA">EQUIPO A</small><strong>40</strong><p>JUAN · DIEGO</p></div><div><small data-i18n="teamB">EQUIPO B</small><strong>30</strong><p>ANA · LUZ</p></div></div><div class="gesture-chip">✋ <span data-i18n="saved">JUGADA GUARDADA</span></div></div></section>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+  <header class="nav">
+    <a class="brand" href="#inicio">
+      <picture><source srcset="assets/logo-128.webp" type="image/webp"><img src="assets/logo-128.png" alt="" width="34" height="34"></picture>
+      <span>PLAYBACK<br>PADEL</span>
+    </a>
+    <nav aria-label="Principal">
+      <a href="#gestos" data-i18n="navGestures">Gestos</a>
+      <a href="#funciones" data-i18n="navFeatures">Funciones</a>
+      <a href="#proximamente" data-i18n="navDownload">Descarga</a>
+      <button id="language" type="button" aria-label="Read in English" lang="en">EN</button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">REPETICIONES Y MARCADOR EN VIVO</p>
+        <h1 data-i18n="heroTitle">Tu mejor punto.<br><em>Un gesto</em> para guardarlo.</h1>
+        <p class="lede" data-i18n="heroText">PlayBack Padel transforma un iPhone en una cámara de repeticiones y marcador para tu partido.</p>
+        <a class="primary" href="#gestos" data-i18n="heroCta">Ver cómo funciona</a>
+      </div>
+      <div class="court-card" role="img" aria-label="Marcador de ejemplo: Equipo A 40, Equipo B 30, jugada guardada" data-i18n-aria="courtAria">
+        <div class="broadcast" aria-hidden="true"><span>● LIVE</span><span>PLAYBACK PADEL</span></div>
+        <div class="score-grid" aria-hidden="true">
+          <div><small data-i18n="teamA">EQUIPO A</small><strong>40</strong><p>JUAN · DIEGO</p></div>
+          <div><small data-i18n="teamB">EQUIPO B</small><strong>30</strong><p>ANA · LUZ</p></div>
+        </div>
+        <div class="gesture-chip" aria-hidden="true">🖐 <span data-i18n="saved">JUGADA GUARDADA</span></div>
+      </div>
+    </section>
+
     <section class="intro"><p data-i18n="intro">Sin reloj, accesorios ni suscripciones. Solo el partido, tus mejores jugadas y un marcador que todos pueden ver.</p></section>
-    <section id="gestos" class="section"><div class="section-head"><p class="eyebrow" data-i18n="gestureEyebrow">CONTROLA EL PARTIDO</p><h2 data-i18n="gestureTitle">Los gestos se entienden<br>de un vistazo.</h2></div><div class="gesture-grid"><article class="gesture a"><span>←</span><h3 data-i18n="gestureA">Punto Equipo A</h3><p data-i18n="gestureAText">Señalá a la izquierda con el índice o la paleta.</p></article><article class="gesture undo"><span>↓</span><h3 data-i18n="gestureUndo">Deshacer</h3><p data-i18n="gestureUndoText">Apuntá hacia abajo para corregir el último punto.</p></article><article class="gesture b"><span>→</span><h3 data-i18n="gestureB">Punto Equipo B</h3><p data-i18n="gestureBText">Señalá a la derecha y el marcador se actualiza.</p></article><article class="gesture save"><span>🖐</span><h3 data-i18n="gestureSave">Guardar jugada</h3><p data-i18n="gestureSaveText">Mostrá la palma abierta durante un segundo.</p></article><article class="gesture var"><span>🖐 🖐</span><h3 data-i18n="gestureVar">Activar VAR</h3><p data-i18n="gestureVarText">Dos palmas separadas abren la repetición con zoom.</p></article></div></section>
-    <section id="funciones" class="features"><div class="section-head"><p class="eyebrow" data-i18n="featureEyebrow">HECHO PARA LA CANCHA</p><h2 data-i18n="featureTitle">Todo lo que necesitás<br>entre punto y punto.</h2></div><div class="feature-list"><article><b>01</b><div><h3 data-i18n="f1">Repetición instantánea</h3><p data-i18n="f1t">Guardá los últimos 15, 30 o 60 segundos sin detener la cámara.</p></div></article><article><b>02</b><div><h3 data-i18n="f2">Marcador visible</h3><p data-i18n="f2t">Nombres, juegos y puntos en una pantalla grande y personalizable.</p></div></article><article><b>03</b><div><h3 data-i18n="f3">VAR con zoom</h3><p data-i18n="f3t">Revisá una jugada a pantalla completa y ampliá el detalle con un pellizco.</p></div></article><article><b>04</b><div><h3 data-i18n="f4">Colores de tu partido</h3><p data-i18n="f4t">Elegí el color de cada equipo para reconocerlo rápido en cada pantalla.</p></div></article></div></section>
-    <section id="proximamente" class="waitlist"><p class="eyebrow" data-i18n="waitEyebrow">PRÓXIMAMENTE</p><h2 data-i18n="waitTitle">PlayBack Padel<br>está entrando a la cancha.</h2><p data-i18n="waitText">La descarga estará disponible pronto. Dejá tu email y te avisamos cuando llegue.</p><form onsubmit="event.preventDefault(); this.querySelector('button').textContent=document.documentElement.lang==='es'?'¡Gracias!':'Thanks!';"><input required type="email" data-i18n-placeholder="email" placeholder="tu@email.com" aria-label="Email"><button type="submit" data-i18n="notify">Avisarme</button></form></section>
-  </main><footer><span>© 2026 PlayBack Padel</span><a href="https://github.com/diegokelya/playback-padel-site">GitHub</a></footer><script src="app.js"></script>
-</body></html>
+
+    <section id="gestos" class="section">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="gestureEyebrow">CONTROLÁ EL PARTIDO</p>
+        <h2 data-i18n="gestureTitle">Los gestos se entienden<br>de un vistazo.</h2>
+      </div>
+      <div class="gesture-grid">
+        <article class="gesture a"><span aria-hidden="true">👈</span><h3 data-i18n="gestureA">Punto Equipo A</h3><p data-i18n="gestureAText">Señalá a la izquierda con el índice o la paleta.</p></article>
+        <article class="gesture undo"><span aria-hidden="true">👇</span><h3 data-i18n="gestureUndo">Deshacer</h3><p data-i18n="gestureUndoText">Apuntá hacia abajo para corregir el último punto.</p></article>
+        <article class="gesture b"><span aria-hidden="true">👉</span><h3 data-i18n="gestureB">Punto Equipo B</h3><p data-i18n="gestureBText">Señalá a la derecha y el marcador se actualiza.</p></article>
+        <article class="gesture save"><span aria-hidden="true">🖐</span><h3 data-i18n="gestureSave">Guardar jugada</h3><p data-i18n="gestureSaveText">Mostrá la palma abierta durante un segundo.</p></article>
+        <article class="gesture var"><span aria-hidden="true">🖐 🖐</span><h3 data-i18n="gestureVar">Activar VAR</h3><p data-i18n="gestureVarText">Dos palmas separadas abren la repetición en cámara lenta.</p></article>
+      </div>
+    </section>
+
+    <section id="funciones" class="features">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="featureEyebrow">HECHO PARA LA CANCHA</p>
+        <h2 data-i18n="featureTitle">Todo lo que necesitás<br>entre punto y punto.</h2>
+      </div>
+      <div class="feature-list">
+        <article><b>01</b><div><h3 data-i18n="f1">Repetición instantánea</h3><p data-i18n="f1t">Guardá los últimos 15, 30 o 60 segundos sin detener la cámara.</p></div></article>
+        <article><b>02</b><div><h3 data-i18n="f2">VAR en cámara lenta</h3><p data-i18n="f2t">Revisá la jugada a ½× o cuadro por cuadro, con doble toque para ampliar justo donde está la pelota.</p></div></article>
+        <article><b>03</b><div><h3 data-i18n="f3">Marcador visible</h3><p data-i18n="f3t">Nombres, juegos y puntos en pantalla grande, con el color de cada equipo.</p></div></article>
+        <article><b>04</b><div><h3 data-i18n="f4">Marcador en dos iPhone</h3><p data-i18n="f4t">Mostrá el resultado en un segundo iPhone cercano, sin internet, con un código de partido.</p></div></article>
+        <article><b>05</b><div><h3 data-i18n="f5">Tus jugadas, en tu iPhone</h3><p data-i18n="f5t">Sin cuentas, servidores ni publicidad. Los videos no salen del teléfono salvo que los compartas.</p></div></article>
+      </div>
+    </section>
+
+    <section id="proximamente" class="waitlist">
+      <p class="eyebrow" data-i18n="waitEyebrow">PRÓXIMAMENTE</p>
+      <h2 data-i18n="waitTitle">PlayBack Padel<br>está entrando a la cancha.</h2>
+      <p data-i18n="waitText">Estamos terminando las pruebas en cancha. Muy pronto vas a poder descargarla gratis en la App Store para iPhone.</p>
+      <p class="badge" data-i18n="waitBadge">Próximamente en la App Store</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 PlayBack Padel</span>
+    <nav aria-label="Legal">
+      <a id="support-link" href="https://diegokelya.github.io/padel-replay-support/" data-i18n="support">Soporte</a>
+      <a id="privacy-link" href="https://diegokelya.github.io/padel-replay-support/privacy.html" data-i18n="privacy">Privacidad</a>
+      <a href="https://github.com/diegokelya/playback-padel-site">GitHub</a>
+    </nav>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
