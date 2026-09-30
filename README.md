@@ -11,13 +11,16 @@ Este repositorio contiene solo los archivos públicos del sitio. El código de l
 | `index.html` | Página única, con metadatos para buscadores y redes (Open Graph). |
 | `app.js` | Textos en español e inglés. Elige el idioma por `?lang=es|en`, después la última elección guardada y después el idioma del navegador. |
 | `styles.css` | Estilos, sin dependencias externas. |
+| `support/` | Soporte (`index.html` en español, `en.html` en inglés). Es la URL de soporte de App Store Connect. |
+| `privacy/` | Política de privacidad (`index.html` / `en.html`). Es la URL de privacidad de App Store Connect. |
+| `legal.css` | Estilos de soporte y privacidad, sobre `styles.css`. |
 | `404.html` | Página de error de GitHub Pages. |
 | `sitemap.xml` | Para cargar en Google Search Console. |
 | `assets/` | Logo optimizado (PNG/WebP 128 px), ícono para iPhone y tarjeta para redes de 1200×630. `playback-padel-logo.png` es el original en alta y no se publica. |
 
 ## Publicación
 
-Cada push a `main` corre `.github/workflows/pages.yml`, que copia solo los archivos públicos a `_site/`, verifica que no falte ningún recurso y publica en GitHub Pages. Si se agrega un archivo nuevo, hay que sumarlo al paso *Build _site*.
+Cada push a `main` corre `.github/workflows/pages.yml`, que copia solo los archivos públicos a `_site/`, verifica que no falte ningún recurso y publica en GitHub Pages. Si se agrega un archivo nuevo, hay que sumarlo al paso *Build _site*. Las páginas de soporte y privacidad reemplazan al repo `padel-replay-support`.
 
 ## Seguridad
 
