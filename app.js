@@ -2,7 +2,7 @@
 const copy = {
   es: {
     title: 'PlayBack Padel — Tu mejor punto, siempre listo',
-    description: 'PlayBack Padel convierte tu iPhone en una cámara de repeticiones para pádel: guardá la jugada con un gesto, revisala en VAR en cámara lenta y llevá el marcador en vivo.',
+    description: 'PlayBack Padel convierte tu iPhone o iPad en una cámara de repeticiones para pádel: guardá la jugada con un gesto, revisala en VAR en cámara lenta y llevá el marcador del partido.',
     skip: 'Saltar al contenido', switchTo: 'Read in English', switchLabel: 'EN',
     navGestures: 'Gestos', navFeatures: 'Funciones', navDownload: 'Descarga',
     eyebrow: 'REPETICIONES Y MARCADOR EN VIVO',
@@ -20,20 +20,23 @@ const copy = {
     gestureVar: 'Activar VAR', gestureVarText: 'Dos palmas separadas abren la repetición en cámara lenta.',
     featureEyebrow: 'HECHO PARA LA CANCHA', featureTitle: 'Todo lo que necesitás<br>entre punto y punto.',
     f1: 'Repetición instantánea', f1t: 'Guardá los últimos 15, 30 o 60 segundos sin detener la cámara.',
-    f2: 'VAR en cámara lenta', f2t: 'Revisá la jugada a ½× o cuadro por cuadro, con doble toque para ampliar justo donde está la pelota.',
-    f3: 'Marcador visible', f3t: 'Nombres, juegos y puntos en pantalla grande, con el color de cada equipo.',
-    f4: 'Marcador en dos iPhone', f4t: 'Mostrá el resultado en un segundo iPhone cercano, sin internet, con un código de partido.',
-    f5: 'Tus jugadas, en tu iPhone', f5t: 'Sin cuentas, servidores ni publicidad. Los videos no salen del teléfono salvo que los compartas.',
+    f2: 'VAR en cámara lenta', f2t: 'Revisá la jugada a ½×, ¼× o cuadro por cuadro. Doble toque para ampliar la pelota, o dejá que el zoom la siga (beta).',
+    f3: 'VAR en tus jugadas guardadas', f3t: 'Abrí el VAR sobre cualquier jugada guardada, empezando un momento antes de lo que estabas viendo.',
+    f4: 'Marcador de partido completo', f4t: 'Sets, juegos, tie-break a 6–6 y punto de oro opcional. Sumá o deshacé con gestos o con un botón.',
+    f5: 'Historial de partidos', f5t: 'Cada partido queda guardado con el resultado por sets y la fecha. Mirá cómo te fue y borrá lo que quieras.',
+    f6: 'Marcador en dos dispositivos', f6t: 'Mostrá el resultado en otro iPhone o iPad cercano, sin internet, con un código de partido.',
+    f7: 'Para iPhone y iPad', f7t: 'La app también funciona en iPad, en pantalla completa y en horizontal.',
+    f8: 'Tus jugadas, en tu dispositivo', f8t: 'Sin cuentas, servidores ni publicidad. Los videos no salen del dispositivo salvo que los compartas.',
     waitEyebrow: 'PRÓXIMAMENTE', waitTitle: 'PlayBack Padel<br>está entrando a la cancha.',
-    waitText: 'Estamos terminando las pruebas en cancha. Muy pronto vas a poder descargarla gratis en la App Store para iPhone.',
+    waitText: 'Estamos terminando las pruebas en cancha. Muy pronto vas a poder descargarla gratis en la App Store para iPhone y iPad.',
     waitBadge: 'Próximamente en la App Store',
     support: 'Soporte', privacy: 'Privacidad',
-    supportUrl: 'https://diegokelya.github.io/padel-replay-support/',
-    privacyUrl: 'https://diegokelya.github.io/padel-replay-support/privacy.html'
+    supportUrl: 'support/',
+    privacyUrl: 'privacy/'
   },
   en: {
     title: 'PlayBack Padel — Your best point, always ready',
-    description: 'PlayBack Padel turns your iPhone into a padel replay camera: save the play with a gesture, review it in slow-motion VAR and keep a live score.',
+    description: 'PlayBack Padel turns your iPhone or iPad into a padel replay camera: save the play with a gesture, review it in slow-motion VAR and keep your match score.',
     skip: 'Skip to content', switchTo: 'Leer en español', switchLabel: 'ES',
     navGestures: 'Gestures', navFeatures: 'Features', navDownload: 'Download',
     eyebrow: 'REPLAY & LIVE SCORING',
@@ -51,16 +54,19 @@ const copy = {
     gestureVar: 'Activate VAR', gestureVarText: 'Two open palms open the replay in slow motion.',
     featureEyebrow: 'BUILT FOR THE COURT', featureTitle: 'Everything you need<br>between points.',
     f1: 'Instant replay', f1t: 'Save the last 15, 30 or 60 seconds without stopping the camera.',
-    f2: 'Slow-motion VAR', f2t: 'Review the play at ½× or frame by frame, and double-tap to zoom right where the ball is.',
-    f3: 'Visible scoring', f3t: 'Names, games and points on a big screen, in each team’s color.',
-    f4: 'Score on two iPhones', f4t: 'Show the score on a second nearby iPhone, no internet needed, paired with a match code.',
-    f5: 'Your plays stay on your iPhone', f5t: 'No accounts, servers or ads. Videos never leave the phone unless you share them.',
+    f2: 'Slow-motion VAR', f2t: 'Review the play at ½×, ¼× or frame by frame. Double-tap to zoom on the ball, or let the zoom follow it (beta).',
+    f3: 'VAR on your saved plays', f3t: 'Open VAR on any saved play, starting a moment before what you were watching.',
+    f4: 'Full match scoring', f4t: 'Sets, games, a tie-break at 6–6 and optional golden point. Add or undo with gestures or a button.',
+    f5: 'Match history', f5t: 'Every match is saved with its score by set and the date. See how you did and delete what you want.',
+    f6: 'Score on two devices', f6t: 'Show the score on another nearby iPhone or iPad, no internet needed, paired with a match code.',
+    f7: 'For iPhone and iPad', f7t: 'The app also works on iPad, full screen and in landscape.',
+    f8: 'Your plays stay on your device', f8t: 'No accounts, servers or ads. Videos never leave the device unless you share them.',
     waitEyebrow: 'COMING SOON', waitTitle: 'PlayBack Padel<br>is stepping onto the court.',
-    waitText: 'We are finishing on-court testing. Very soon you will be able to download it for free on the App Store for iPhone.',
+    waitText: 'We are finishing on-court testing. Very soon you will be able to download it for free on the App Store for iPhone and iPad.',
     waitBadge: 'Coming soon to the App Store',
     support: 'Support', privacy: 'Privacy',
-    supportUrl: 'https://diegokelya.github.io/padel-replay-support/index.en.html',
-    privacyUrl: 'https://diegokelya.github.io/padel-replay-support/privacy.en.html'
+    supportUrl: 'support/en.html',
+    privacyUrl: 'privacy/en.html'
   }
 };
 
