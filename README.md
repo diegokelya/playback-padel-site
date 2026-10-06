@@ -16,6 +16,7 @@ Este repositorio contiene solo los archivos públicos del sitio. El código de l
 | `legal.css` | Estilos de soporte y privacidad, sobre `styles.css`. |
 | `404.html` | Página de error de GitHub Pages. |
 | `sitemap.xml` | Para cargar en Google Search Console. |
+| `assets/shots/` | Capturas de la app en WebP (iPhone y Watch, español e inglés), con datos de ejemplo. `app.js` elige las del idioma activo. |
 | `assets/` | Logo optimizado (PNG/WebP 128 px), ícono para iPhone y tarjeta para redes de 1200×630. `playback-padel-logo.png` es el original en alta y no se publica. |
 
 ## Publicación
