@@ -31,6 +31,8 @@ jobs:
           cp support/index.html support/en.html _site/support/
           cp privacy/index.html privacy/en.html _site/privacy/
           cp assets/logo-128.png assets/logo-128.webp assets/apple-touch-icon.png assets/og-image.png _site/assets/
+          mkdir -p _site/assets/shots
+          cp assets/shots/*.webp _site/assets/shots/
           # Fail if a page references a local file that was not published.
           for ref in $(grep -ohE '(src|href|srcset)="(assets/[^"]+|[a-z0-9-]+\.(css|js|html|xml))"' _site/index.html | cut -d'"' -f2); do
             test -f "_site/$ref" || { echo "::error::Missing $ref"; exit 1; }

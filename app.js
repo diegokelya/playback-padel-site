@@ -29,6 +29,19 @@ const copy = {
     f9: 'Apple Watch', f9t: 'Sumá puntos, deshacé, guardá la jugada y abrí el VAR desde la muñeca, con el puntaje en el reloj.',
     f10: 'Quién saca', f10t: 'El marcador marca quién saca en cada punto: cambia solo en cada juego y respeta el tie-break.',
     f8: 'Tus jugadas, en tu dispositivo', f8t: 'Sin cuentas, servidores ni publicidad. Los videos no salen del dispositivo salvo que los compartas.',
+    shotsEyebrow: 'LA APP POR DENTRO', shotsTitle: 'Así se ve<br>en la cancha.',
+    shotScore: 'Marcador a pantalla completa, con sets, juegos y puntos.', shotScoreAlt: 'Marcador de PlayBack Padel a pantalla completa: Equipo A 40, Equipo B 30, con los sets',
+    shotHistory: 'Historial de partidos con sus jugadas.', shotHistoryAlt: 'Historial de partidos de PlayBack Padel',
+    watchTitle: 'También en tu muñeca', watchText: 'Con el Apple Watch sumás puntos, deshacés, guardás la jugada y abrís el VAR sin tocar el iPhone de la reja. Es opcional.',
+    watch1Alt: 'Apple Watch con el puntaje 40–30 y los botones +1, deshacer, guardar jugada y VAR', watch2Alt: 'Apple Watch con el aviso para activar el puntaje en el iPhone', watch3Alt: 'Apple Watch con el aviso de partido terminado',
+    shotsNote: 'Capturas con datos de ejemplo.',
+    faqEyebrow: 'PREGUNTAS FRECUENTES', faqTitle: 'Lo que casi todos<br>preguntan.',
+    q1: '¿Necesito internet?', a1: 'No. Todo funciona en el dispositivo. El marcador compartido entre dos iPhone o iPad usa Wi-Fi o Bluetooth, sin internet.',
+    q2: '¿A qué distancia funcionan los gestos?', a2: 'Hasta unos 1,5 metros de la cámara. Para jugar más lejos están el marcador con botones y el Apple Watch.',
+    q3: '¿Necesito un Apple Watch?', a3: 'No. Los gestos y los botones de la pantalla alcanzan. El reloj es un extra para manejar el partido desde la muñeca.',
+    q4: '¿Cuánto video guarda?', a4: 'Mantiene en bucle los últimos 15, 30 o 60 segundos, a tu elección. Solo se guarda un video cuando mostrás la palma o tocás Guardar jugada.',
+    q5: '¿Mis videos se suben a algún lado?', a5: 'No. No hay cuentas ni servidores: los videos, los nombres y los puntajes quedan en tu dispositivo, y solo salen si vos los compartís.',
+    q6: '¿Qué necesito para usarla?', a6: 'Un iPhone o iPad con iOS 17 o superior. Para el reloj, un Apple Watch con watchOS 10 o superior.',
     waitEyebrow: 'PRÓXIMAMENTE', waitTitle: 'PlayBack Padel<br>está entrando a la cancha.',
     waitText: 'Estamos terminando las pruebas en cancha. Muy pronto vas a poder descargarla gratis en la App Store para iPhone y iPad.',
     waitBadge: 'Próximamente en la App Store',
@@ -65,6 +78,19 @@ const copy = {
     f9: 'Apple Watch', f9t: 'Add points, undo, save the play and open VAR from your wrist, with the score on the watch.',
     f10: 'Who serves', f10t: 'The scoreboard shows who is serving on every point: it changes each game by itself and follows the tie-break.',
     f8: 'Your plays stay on your device', f8t: 'No accounts, servers or ads. Videos never leave the device unless you share them.',
+    shotsEyebrow: 'INSIDE THE APP', shotsTitle: 'This is how it looks<br>on court.',
+    shotScore: 'Full-screen scoreboard with sets, games and points.', shotScoreAlt: 'PlayBack Padel full-screen scoreboard: Team A 40, Team B 30, with the sets',
+    shotHistory: 'Match history with its plays.', shotHistoryAlt: 'PlayBack Padel match history',
+    watchTitle: 'On your wrist too', watchText: 'With the Apple Watch you add points, undo, save the play and open VAR without touching the iPhone on the fence. It is optional.',
+    watch1Alt: 'Apple Watch showing the 40–30 score with +1, undo, save play and VAR buttons', watch2Alt: 'Apple Watch with the notice to turn scoring on on the iPhone', watch3Alt: 'Apple Watch with the match finished notice',
+    shotsNote: 'Screenshots with sample data.',
+    faqEyebrow: 'FAQ', faqTitle: 'What almost everyone<br>asks.',
+    q1: 'Do I need internet?', a1: 'No. Everything runs on the device. The shared score between two iPhones or iPads uses Wi-Fi or Bluetooth, no internet.',
+    q2: 'How far do the gestures work?', a2: 'Up to about 1.5 meters (5 ft) from the camera. To play farther away there are the scoreboard buttons and the Apple Watch.',
+    q3: 'Do I need an Apple Watch?', a3: 'No. Gestures and the on-screen buttons are enough. The watch is an extra to run the match from your wrist.',
+    q4: 'How much video does it keep?', a4: 'It keeps a loop of the last 15, 30 or 60 seconds, your choice. A video is saved only when you show your palm or tap Save play.',
+    q5: 'Do my videos go anywhere?', a5: 'No. There are no accounts or servers: videos, names and scores stay on your device and only leave if you share them.',
+    q6: 'What do I need to use it?', a6: 'An iPhone or iPad running iOS 17 or later. For the watch, an Apple Watch running watchOS 10 or later.',
     waitEyebrow: 'COMING SOON', waitTitle: 'PlayBack Padel<br>is stepping onto the court.',
     waitText: 'We are finishing on-court testing. Very soon you will be able to download it for free on the App Store for iPhone and iPad.',
     waitBadge: 'Coming soon to the App Store',
@@ -72,6 +98,12 @@ const copy = {
     supportUrl: 'support/en.html',
     privacyUrl: 'privacy/en.html'
   }
+};
+
+// Screenshots differ by language only in their text, so each language names its own files.
+const shots = {
+  es: { marcador: 'iphone-es-01-marcador', historial: 'iphone-es-04-historial', watch1: 'watch-es-01-partido', watch2: 'watch-es-02-puntaje-apagado', watch3: 'watch-es-03-partido-terminado' },
+  en: { marcador: 'iphone-en-01-marcador', historial: 'iphone-en-04-historial', watch1: 'watch-en-01-match', watch2: 'watch-en-02-scoring-off', watch3: 'watch-en-03-match-finished' }
 };
 
 const store = {
@@ -96,6 +128,8 @@ function render() {
   document.title = text.title;
   document.querySelector('meta[name="description"]').setAttribute('content', text.description);
   document.querySelectorAll('[data-i18n]').forEach(el => { el.innerHTML = text[el.dataset.i18n]; });
+  document.querySelectorAll('[data-shot]').forEach(img => { img.src = `assets/shots/${shots[lang][img.dataset.shot]}.webp`; });
+  document.querySelectorAll('[data-i18n-alt]').forEach(img => img.setAttribute('alt', text[img.dataset.i18nAlt]));
   document.querySelectorAll('[data-i18n-aria]').forEach(el => el.setAttribute('aria-label', text[el.dataset.i18nAria]));
   document.getElementById('support-link').href = text.supportUrl;
   document.getElementById('privacy-link').href = text.privacyUrl;
