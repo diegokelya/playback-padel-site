@@ -50,8 +50,9 @@
       <li><b>🖐 Save a play:</b> show an open palm, fingers apart, for one second. It does not change the score.</li>
       <li><b>🖐 🖐 VAR:</b> show two open, separated palms for one second.</li>
     </ul>
-    <p>To score with gestures, turn on <b>Gesture scoring · experimental</b> and <b>Point with index finger</b> in Controls, and point no more than 1.5 m (5 ft) from the camera. You can also add points and undo with the scoreboard buttons.</p>
+    <p>To score with gestures, turn on <b>Gesture scoring · experimental</b> in Settings and point no more than 1.5 m (5 ft) from the camera. You can also add points and undo with the scoreboard buttons.</p>
     <p><b>Scoring in two steps:</b> so a random movement does not add points, you first point (that only arms the point) and then show an open palm for one second, within the next 5 seconds. If you do not confirm, nothing happens. You can turn it off in Settings → <b>Confirm with palm</b>.</p>
+    <p>While <b>Plays</b> or <b>Matches</b> are open, gestures are paused: a hand near the phone does not add points or save plays.</p>
 
     <h2>Scoreboard</h2>
     <p>The scoreboard plays best-of-three-sets matches and counts games automatically. At 6–6 a 7-point tie-break is played, winning by 2. In Controls you can turn on <b>Golden point</b>: the point at 40–40 decides the game; when off, advantage is played. Team colors are chosen in <b>Controls → Players</b>.</p>
@@ -60,7 +61,13 @@
     <p>Show both palms or tap <b>VAR</b>. The replay of the last 15 s, 30 s or 1 minute (per your setting) opens in slow motion at ½×, with 1× and ¼× options and frame-by-frame stepping. Double-tap the ball to zoom in there, and <b>Follow ball · beta</b> moves the zoom along with it when the app manages to find it. You can also open VAR on a saved play. VAR never edits or deletes your videos.</p>
 
     <h2>Saved plays</h2>
-    <p>Every VAR is saved by itself as a play, with a <b>VAR</b> tag, and linked to the match in progress. Pause the camera and open <b>Plays</b> to watch (full screen), share, copy to Photos, edit the play's score, show captions from the audio and delete. Deleting a play also removes its score and captions; copies you made in Photos are kept.</p>
+    <p>Every VAR is saved by itself as a play, with a <b>VAR</b> tag, and linked to the match in progress. Open <b>Plays</b> (you can do it with the camera running) to watch (full screen), share, copy to Photos, edit the play's score and delete. In the player, the eye button hides the score. <b>Share</b> offers the video as is or <b>with the score</b> drawn in the corner. Deleting a play also removes its score; copies you made in Photos are kept.</p>
+
+    <h2>Save notice</h2>
+    <p>When a play is saved, a big notice appears at the top of the camera screen: “Saving play…” and then “Play saved” in green (or “The play was not saved” in red). You can read it from a couple of meters away, with the phone on the fence.</p>
+
+    <h2>Long rally · beta</h2>
+    <p>Turn on <b>Save long rallies · beta</b> in Settings and the app listens for the sound of the ball hits with the camera's microphone. When a rally lasts more than 8 seconds, it saves the whole play when it ends, with the <b>RALLY</b> tag. It ignores short exchanges, voices and music, but it can miss or misfire in a noisy place or with other courts nearby. It records no separate audio and sends nothing anywhere.</p>
 
     <h2>Match history</h2>
     <p>When a match ends, or when you start a new one with the previous match unfinished, it is saved with the teams, the score by set and the date. Open it from Controls → <b>Matches</b>. Each match shows its plays: tap one to watch it. You can delete matches one by one or all at once. If you undo the winning point, the match is live again and is saved once more when it ends.</p>
@@ -69,7 +76,7 @@
     <p>In the scoreboard's ⋯ menu choose <b>Who serves first?</b>. From then on a ball shows who is serving on every point: the serve changes team each game, alternates between partners and follows the tie-break. It is worked out from the score, so undoing a point brings it back by itself. It also shows on the Apple Watch.</p>
 
     <h2>Apple Watch</h2>
-    <p>The watch app (watchOS 10 or later) is installed from the Watch app on the iPhone. It shows the score and lets you <b>add points, undo, save a play and open VAR</b> from your wrist. The point buttons need gesture scoring on; saving a play and VAR need the camera running. If the watch says “iPhone not reachable”, bring it closer to the iPhone and open the app.</p>
+    <p>The watch app (watchOS 10 or later) is installed from the Watch app on the iPhone. It shows the score and lets you <b>add points, undo, save a play and open VAR</b> from your wrist. The point buttons need gesture scoring on; saving a play and VAR need the camera running. When you tap <b>Save play</b> or <b>VAR</b>, the watch shows “Saving…” and then “Play saved” or “VAR ready on iPhone”, with a vibration. If it fails it says “Did not work”. If the watch says “iPhone not reachable”, bring it closer to the iPhone and open the app.</p>
 
     <h2>Score on two devices</h2>
     <p>Turn on <b>Share score nearby</b> on both devices and enter the same 4-digit match code. They find each other over Wi-Fi or Bluetooth, with no internet. The first time, iOS asks for <b>Local Network</b> permission. The device that keeps the score is the one in charge.</p>
@@ -82,7 +89,6 @@
         <tr><td>Microphone</td><td>Sound in your plays</td><td>No</td></tr>
         <tr><td>Photos (add only)</td><td>Copy plays to Photos when you ask</td><td>No</td></tr>
         <tr><td>Local network</td><td>Shared score with another device</td><td>No</td></tr>
-        <tr><td>Speech recognition</td><td>Recognize the score from a saved play's audio</td><td>No</td></tr>
       </tbody>
     </table>
     <p>You can change them in <b>Settings → PlayBack Padel</b>. The app's alerts include a button that takes you there.</p>
