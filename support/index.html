@@ -50,8 +50,9 @@
       <li><b>🖐 Guardar jugada:</b> mostrá la palma abierta, con los dedos separados, durante un segundo. No cambia el puntaje.</li>
       <li><b>🖐 🖐 VAR:</b> mostrá dos palmas abiertas y separadas durante un segundo.</li>
     </ul>
-    <p>Para puntuar con gestos, activá <b>Puntaje por gestos · experimental</b> y <b>Apuntar con el índice</b> en Controles, y señalá a no más de 1,5 m de la cámara. También podés sumar puntos y deshacer con los botones del marcador.</p>
+    <p>Para puntuar con gestos, activá <b>Puntaje por gestos · experimental</b> en Configuración y señalá a no más de 1,5 m de la cámara. También podés sumar puntos y deshacer con los botones del marcador.</p>
     <p><b>Puntuar en dos pasos:</b> para que un movimiento al azar no sume puntos, primero apuntás (eso solo arma el punto) y después mostrás la palma abierta durante un segundo, dentro de los 5 segundos siguientes. Si no confirmás, no pasa nada. Se puede apagar en Configuración → <b>Confirmar con la palma</b>.</p>
+    <p>Mientras tenés <b>Jugadas</b> o <b>Partidos</b> abiertos, los gestos se pausan: una mano cerca del teléfono no suma puntos ni guarda jugadas.</p>
 
     <h2>Marcador</h2>
     <p>El marcador lleva partidos al mejor de tres sets y suma los juegos automáticamente. Con 6–6 se juega un tie-break a 7 puntos, con diferencia de 2. En Controles podés activar <b>Punto de oro</b>: el punto en 40–40 cierra el juego; apagado, se juega con ventaja. Los colores de cada equipo se eligen en <b>Controles → Jugadores</b>.</p>
@@ -60,7 +61,13 @@
     <p>Mostrá las dos palmas o tocá <b>VAR</b>. Se abre la repetición de los últimos 15 s, 30 s o 1 minuto (según tu configuración) en cámara lenta a ½×, con opciones de 1× y ¼× y avance cuadro por cuadro. Con un doble toque sobre la pelota ampliás ahí, y <b>Seguir pelota · beta</b> mueve el zoom siguiéndola cuando la app logra encontrarla. También podés abrir el VAR sobre una jugada guardada. El VAR nunca modifica ni borra tus videos.</p>
 
     <h2>Jugadas guardadas</h2>
-    <p>Cada VAR se guarda solo como una jugada, con una etiqueta <b>VAR</b>, y se vincula al partido en juego. Pausá la cámara y abrí <b>Jugadas</b> para reproducir (a pantalla completa), compartir, copiar a Fotos, editar el marcador de la jugada, mostrar subtítulos a partir del audio y borrar. Al borrar una jugada se eliminan también su marcador y sus subtítulos; las copias que hayas hecho en Fotos se conservan.</p>
+    <p>Cada VAR se guarda solo como una jugada, con una etiqueta <b>VAR</b>, y se vincula al partido en juego. Abrí <b>Jugadas</b> (se puede con la cámara andando) para reproducir (a pantalla completa), compartir, copiar a Fotos, editar el marcador de la jugada y borrar. En el reproductor, el botón del ojo oculta el marcador. <b>Compartir</b> ofrece el video tal cual o <b>con el marcador</b> dibujado en la esquina. Al borrar una jugada se elimina también su marcador; las copias que hayas hecho en Fotos se conservan.</p>
+
+    <h2>Aviso al guardar</h2>
+    <p>Cuando se guarda una jugada, arriba de la pantalla de la cámara aparece un aviso grande: «Guardando jugada…» y después «Jugada guardada» en verde (o «No se guardó la jugada» en rojo). Se ve a un par de metros, con el teléfono en la reja.</p>
+
+    <h2>Rally largo · beta</h2>
+    <p>Activá <b>Guardar rallies largos · beta</b> en Configuración y la app escucha el sonido de los golpes con el micrófono de la cámara. Cuando un rally dura más de 8 segundos, guarda la jugada completa cuando termina, con la etiqueta <b>RALLY</b>. Descarta intercambios cortos, voces y música, pero puede fallar con mucho ruido o con otras canchas cerca. No graba audio aparte ni lo envía a ningún lado.</p>
 
     <h2>Historial de partidos</h2>
     <p>Cuando un partido termina, o cuando empezás uno nuevo con el anterior sin terminar, se guarda con los equipos, el resultado por sets y la fecha. Abrilo en Controles → <b>Partidos</b>. Cada partido muestra sus jugadas: tocá una para verla. Podés borrar partidos de a uno o todos juntos. Si deshacés el punto ganador, el partido vuelve a estar en juego y se guarda de nuevo cuando termine.</p>
@@ -69,7 +76,7 @@
     <p>En el menú ⋯ del marcador elegí <b>¿Quién saca primero?</b>. Desde ahí una pelota marca quién saca en cada punto: el saque cambia de equipo en cada juego, alterna entre compañeros y sigue el tie-break. Se calcula desde el puntaje, así que al deshacer un punto vuelve solo. También se ve en el Apple Watch.</p>
 
     <h2>Apple Watch</h2>
-    <p>La app del reloj (watchOS 10 o más) se instala desde la app Watch del iPhone. Muestra el puntaje y te deja <b>sumar puntos, deshacer, guardar una jugada y abrir el VAR</b> desde la muñeca. Los botones de punto necesitan el puntaje por gestos activo; guardar jugada y VAR, la cámara andando. Si el reloj dice «iPhone no disponible», acercalo al iPhone y abrí la app.</p>
+    <p>La app del reloj (watchOS 10 o más) se instala desde la app Watch del iPhone. Muestra el puntaje y te deja <b>sumar puntos, deshacer, guardar una jugada y abrir el VAR</b> desde la muñeca. Los botones de punto necesitan el puntaje por gestos activo; guardar jugada y VAR, la cámara andando. Al tocar <b>Guardar jugada</b> o <b>VAR</b>, el reloj muestra «Guardando…» y después «Jugada guardada» o «VAR listo en el iPhone», con una vibración. Si falla dice «No se pudo». Si el reloj dice «iPhone no disponible», acercalo al iPhone y abrí la app.</p>
 
     <h2>Marcador en dos dispositivos</h2>
     <p>Activá <b>Transmitir marcador cercano</b> en ambos dispositivos e ingresá el mismo código de partido de 4 dígitos. Se encuentran solos por Wi-Fi o Bluetooth, sin internet. La primera vez, iOS pide el permiso de <b>Red local</b>. El dispositivo que lleva el puntaje es el que manda.</p>
@@ -82,7 +89,6 @@
         <tr><td>Micrófono</td><td>Sonido de las jugadas</td><td>No</td></tr>
         <tr><td>Fotos (solo agregar)</td><td>Copiar jugadas a Fotos cuando lo pedís</td><td>No</td></tr>
         <tr><td>Red local</td><td>Marcador compartido con otro dispositivo</td><td>No</td></tr>
-        <tr><td>Reconocimiento de voz</td><td>Reconocer el puntaje desde el audio de una jugada guardada</td><td>No</td></tr>
       </tbody>
     </table>
     <p>Podés cambiarlos en <b>Configuración → PlayBack Padel</b>. Los avisos de la app tienen un botón para ir directo.</p>
