@@ -31,5 +31,5 @@ Cada push a `main` corre `.github/workflows/pages.yml`, que copia solo los archi
 
 ## Pendiente
 
-- Cuando la app esté en la App Store: reemplazar "Próximamente" por el badge oficial y el link.
+- Opcional: reemplazar el botón de descarga por el badge oficial de Apple.
 - Si se quiere una lista de espera real, conectar un servicio (Buttondown, Google Forms) y agregarlo a la política de privacidad.
